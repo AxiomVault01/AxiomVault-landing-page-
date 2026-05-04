@@ -90,7 +90,7 @@ AxiomVault/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/chikamso-cmd/AxiomVault.git
+git clone https://github.com/AxiomVault01/AxiomVault-landing-page-.git
 cd AxiomVault
 ```
 
@@ -102,7 +102,7 @@ AxiomVault
 2. Install dependencies
 
 ```bash
-npm install
+bun install
 ```
 
 ### Development
@@ -110,7 +110,7 @@ npm install
 Start the dev server with HMR:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 The app runs at `http://localhost:5173`.
@@ -118,19 +118,19 @@ The app runs at `http://localhost:5173`.
 ### Build
 
 ```bash
-npm run build
+bun run build
 ```
 
 ### Preview
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ### Lint
 
 ```bash
-npm run lint
+bun run lint
 ```
 
 ## Design Notes
