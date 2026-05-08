@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
           <div className="flex flex-col items-center md:items-start gap-4">
              <div className="">
-              <img src="/Logo1.png" alt="axiomvault logo" className='w-70'/>
+              <img src="/Logo1.png" loading='lazy' alt="axiomvault logo" className='w-70'/>
             </div>
             <p className="text-sm max-w-xs text-center md:text-left">
               Advanced AI-powered fraud detection for the modern financial landscape.

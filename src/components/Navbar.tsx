@@ -48,10 +48,10 @@ export default function Navbar() {
 
         {/* Desktop CTAs */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="text-sm font-medium text-brand ">
+          <button className="text-sm font-medium text-brand cursor-pointer ">
             Sign Up
           </button>
-          <button className="bg-[#102a43] hover:bg-blue-900 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all border border-white/5">
+          <button className="bg-[#102a43] hover:bg-blue-900 text-white text-sm cursor-pointer font-semibold px-5 py-2.5 rounded-xl transition-all border border-white/5">
             Join the Waitlist
           </button>
         </div>
@@ -87,8 +87,8 @@ export default function Navbar() {
               ))}
               <hr className="border-white/10" />
               <div className="flex flex-col gap-4">
-                <button className="text-brand font-medium">Sign Up</button>
-                <button className="bg-brand text-white font-semibold py-3 rounded-xl">
+                <button className="text-brand font-medium cursor-pointer">Sign Up</button>
+                <button className="bg-brand text-white font-semibold py-3 rounded-xl cursor-pointer">
                   Join the Waitlist
                 </button>
               </div>

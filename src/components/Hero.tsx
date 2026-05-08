@@ -5,10 +5,10 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen  bg-[url('/hero.gif')] bg-cover bg-center pt-40 pb-20 overflow-hidden bg-[#020617]">
       {/* Background Ambience */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden">
+      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-purple-600/20 blur-[120px] rounded-full opacity-50" />
         <div className="absolute top-40 left-1/4 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full opacity-30" />
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
         {/* Badge */}
@@ -25,7 +25,7 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-5xl font-bold max-w-4xl mb-6 leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70"
         >
           Detect Fraud Before It Happens
@@ -69,7 +69,8 @@ export default function Hero() {
             
             {/* Placeholder Image (represents the dashboard) */}
             <img 
-              src="/public/laptop.svg" 
+            loading='lazy'
+              src="/laptop.svg" 
               alt="Dashboard"
               className="w-full object-cover rounded-xl brightness-90 contrast-125"
             />

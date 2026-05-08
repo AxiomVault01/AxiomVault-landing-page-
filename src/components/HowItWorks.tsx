@@ -9,7 +9,7 @@ const steps = [
   {
     title: 'AI Detection',
     description: 'AI analyzes patterns and detects anomalies',
-    image: '/public/aidetection.svg'
+    image: '/aidetection.svg'
   },
   {
     title: 'Alerts',
@@ -48,6 +48,7 @@ export default function HowItWorks() {
             >
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6 border border-slate-200">
                 <img 
+                  loading='lazy'
                   src={step.image} 
                   alt={step.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
