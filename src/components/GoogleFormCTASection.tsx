@@ -23,7 +23,7 @@ const GoogleFormCTASection: React.FC = () => {
         {/* The Button */}
         <button
           onClick={handleButtonClick}
-          className="bg-brand hover:bg-brand/80 cursor-pointer text-white font-bold py-4 px-10 rounded-full 
+          className="bg-white hover:bg-white/80 cursor-pointer text-brand font-semibold py-2 px-10 rounded-lg 
                      transition-all duration-200 transform hover:scale-105 active:scale-95
                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 
                      focus:ring-offset-slate-900 shadow-lg"
