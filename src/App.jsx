@@ -11,6 +11,7 @@ import Pricing from "./components/Pricing";
 import CTASection from "./components/CTASection";
 import WaitlistForm from "./components/WaitlistForm";
 import Footer from "./components/Footer";
+import GoogleFormCTASection from "./components/GoogleFormCTASection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Pricing />
         <CTASection />
         <WaitlistForm />
+        <GoogleFormCTASection />
         <Footer />
       </main>
     </>
