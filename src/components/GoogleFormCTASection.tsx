@@ -11,20 +11,20 @@ const GoogleFormCTASection: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center p-8">
+    <div className="flex justify-center items-center p-3 w-full ">
       {/* The "Deep" Container */}
-      <div className="bg-slate-900 rounded-2xl p-10 max-w-2xl w-full text-center shadow-2xl border border-slate-800">
+      <div className="bg-white rounded-2xl p-10  w-full text-center border border-brand/10 shadow-lg">
         
         {/* The p tag */}
-        <p className="text-slate-300 text-lg md:text-xl mb-8 leading-relaxed">
-          We’d love to hear from you! Click on the button below to fill out our 
+        <p className="text-brand text-lg md:text-xl mb-8 leading-relaxed">
+          At <span className="text-brand font-bold">AxiomVault,</span> we strive for excellence. your feedback directly shapes our roadmap and help us improve our services. Could you spare a moment to fill out our 
           <span className="text-blue-400 font-medium"> Google Form</span> and share your thoughts.
         </p>
 
         {/* The Button */}
         <button
           onClick={handleButtonClick}
-          className="bg-white hover:bg-white/80 cursor-pointer text-brand font-semibold py-2 px-10 rounded-lg 
+          className="bg-brand hover:bg-brand/80 cursor-pointer text-white font-semibold py-2 px-10 rounded-lg 
                      transition-all duration-200 transform hover:scale-105 active:scale-95
                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 
                      focus:ring-offset-slate-900 shadow-lg"

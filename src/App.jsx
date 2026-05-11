@@ -27,7 +27,7 @@ function App() {
         <Testimonials />
         <Pricing />
         <CTASection />
-        <WaitlistForm />
+        {/* <WaitlistForm /> */}
         <GoogleFormCTASection />
         <Footer />
       </main>
