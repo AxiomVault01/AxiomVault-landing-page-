@@ -2,7 +2,8 @@ import React from 'react';
 
 const GoogleFormCTASection: React.FC = () => {
   //  Google Form URL
-  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfdcDL0kSZRbbAXen5-TkIYV3vy0nZOD3iMpOwMrtHEvL5Reg/viewform?usp=publish-editor";
+  const googleFormUrl = "https://forms.gle/sC5m4DZWHrbGwVPR9";
+  // const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfdcDL0kSZRbbAXen5-TkIYV3vy0nZOD3iMpOwMrtHEvL5Reg/viewform?usp=publish-editor";
 
   const handleButtonClick = (): void => {
     // Open in a new tab with security features
