@@ -51,9 +51,9 @@ export default function Navbar() {
           <button className="text-sm font-medium text-brand cursor-pointer ">
             Sign Up
           </button>
-          <button className="bg-[#102a43] hover:bg-blue-900 text-white text-sm cursor-pointer font-semibold px-5 py-2.5 rounded-xl transition-all border border-white/5">
+          <a href="#waitlist" className="bg-[#102a43] hover:bg-blue-900 text-white text-sm cursor-pointer font-semibold px-5 py-2.5 rounded-xl transition-all border border-white/5 text-center">
             Join the Waitlist
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -88,9 +88,11 @@ export default function Navbar() {
               <hr className="border-white/10" />
               <div className="flex flex-col gap-4">
                 <button className="text-brand font-medium cursor-pointer">Sign Up</button>
-                <button className="bg-brand text-white font-semibold py-3 rounded-xl cursor-pointer">
+                <a href='#waitlist'
+                onClick={() => setIsMobileMenuOpen(false)}
+                 className="bg-brand text-white font-semibold py-3 rounded-xl cursor-pointer text-center">
                   Join the Waitlist
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

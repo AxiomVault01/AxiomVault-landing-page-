@@ -48,10 +48,10 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="flex flex-col items-center gap-6"
         >
-          <button className="group relative flex items-center gap-2 bg-[#102a43] hover:bg-blue-900 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-xl shadow-blue-900/20">
+          <a href="#waitlist" className="group relative flex items-center gap-2 bg-[#102a43] hover:bg-blue-900 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-xl shadow-blue-900/20">
             Join the Waitlist
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </button>
+          </a>
           <p className="text-white text-sm tracking-wide">
             Trusted by Tier-1 banks • Enterprise • Government
           </p>
