@@ -11,7 +11,7 @@ const GoogleFormCTASection: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center p-3 w-full ">
+    <section id="waitlist" className="flex justify-center items-center p-3 w-full ">
       {/* The "Deep" Container */}
       <div className="bg-white rounded-2xl p-10  w-full text-center border border-brand/10 shadow-lg">
         
@@ -32,7 +32,7 @@ const GoogleFormCTASection: React.FC = () => {
           Open Form
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
