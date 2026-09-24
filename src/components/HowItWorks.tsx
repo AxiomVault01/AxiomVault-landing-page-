@@ -1,26 +1,49 @@
-import { motion } from 'motion/react';
+import {
+  AlertTriangle,
+  BarChart3,
+  CheckCircle,
+  FileSearchCornerIcon,
+  Icon,
+  Lock,
+} from "lucide-react";
+import { motion } from "motion/react";
 
 const steps = [
   {
-    title: 'Data Ingestion',
-    description: 'Collect data from multiple sources in real time',
-    image: '/dataingestion.svg'
+    icon: Lock,
+    title: "Secure Login & Access",
+    description:
+      "Multi-factor authentication ensures only authorized auditors can access the system.",
+    number: 1,
   },
   {
-    title: 'AI Detection',
-    description: 'AI analyzes patterns and detects anomalies',
-    image: '/aidetection.svg'
+    icon: BarChart3,
+    title: "Dashboard Overview",
+    description:
+      "View all high-risk cases at a glance with color-coded risk indicators and priority alerts.",
+    number: 2,
   },
   {
-    title: 'Alerts',
-    description: 'Instant alerts on high-risk activities',
-    image: '/alerts.svg'
+    icon: FileSearchCornerIcon,
+    title: "Case Investigation",
+    description:
+      "Drill down into suspicious records with side-by-side comparisons and detailed analysis.",
+    number: 3,
   },
   {
-    title: 'Investigation',
-    description: 'Analyze and resolve fraud cases quickly',
-    image: '/investigation.svg'
-  }
+    icon: AlertTriangle,
+    title: "Risk Assessment",
+    description:
+      "AI-powered scoring evaluates fraud probability and suggests next actions.",
+    number: 4, 
+  },
+  {
+    icon: CheckCircle,
+    title: "Documentation",
+    description:
+      "Generate comprehensive reports and maintain complete audit trails automatically.",
+    number: 5,
+  },
 ];
 
 export default function HowItWorks() {
@@ -32,11 +55,12 @@ export default function HowItWorks() {
             How AxiomVault Works
           </h2>
           <p className="text-slate-500 text-md max-w-2xl mx-auto">
-            Understand how our AI-powered system detects and prevents fraud in real time
+            A streamlined workflow designed for efficient fraud detection and
+            investigation.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -44,23 +68,18 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group"
+              className="group bg-[#F9FAFB] p-8 rounded-md flex items-center gap-5"
             >
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6 border border-slate-200">
-                <img 
-                  loading='lazy'
-                  src={step.image} 
-                  alt={step.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="bg-[#0A1F44] px-6 py-3 rounded-xl text-lg font-bold text-white">
+                {" "}
+                {step.number}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2 font-display">
-                {step.title}
-              </h3>
-              <p className="text-slate-500 text-sm">
-                {step.description}
-              </p>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 font-display flex items-center gap-1">
+                  <step.icon size={20} className="text-[#A64712]" /> {step.title}
+                </h3>
+                <p className="text-slate-500 text-sm">{step.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>
