@@ -77,7 +77,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 md:w-3xl gap-8 lg:w-6xl mx-auto">
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.name}
@@ -87,8 +87,8 @@ export default function Pricing() {
               transition={{ delay: index * 0.1 }}
               className={`relative p-8 rounded-[2.5rem] border ${
                 tier.popular
-                  ? "bg-[#0A1F44] text-white border-[#102a43] shadow-2xl shadow-blue-900/20"
-                  : "bg-white text-slate-900 border-slate-200"
+                  ? "bg-[#0A1F44] text-white border-[#102a43] shadow-2xl shadow-blue-900/20 hover:shadow-md cursor-pointer duration-100 transition-all hover:scale-102"
+                  : "bg-white text-slate-900 border-slate-200 hover:shadow-md cursor-pointer duration-100 transition-all hover:scale-102"
               }`}
             >
               {tier.popular && (

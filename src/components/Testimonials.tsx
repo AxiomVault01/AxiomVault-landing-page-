@@ -29,7 +29,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-32 bg-white bg-linear-to-r [#F9FAFB, #EFF6FF] "
+      className="py-32 bg-gradient-to-tr from-[#F9FAFB] via-[#EFF6FF] to-[#F3F4F6] "
     >
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
@@ -41,7 +41,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
             <motion.div
               key={item.author}

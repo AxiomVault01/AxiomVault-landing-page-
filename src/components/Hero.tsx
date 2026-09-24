@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen  bg-[url('/Hero.png')] bg-cover bg-center pt-40 pb-20 overflow-hidden bg-[#020617]">
+    <section id='hero' className="relative min-h-screen  bg-[url('/Hero.png')] bg-cover bg-center pt-40 pb-20 overflow-hidden bg-[#020617]">
       {/*  */}
       <div className="absolute inset-0 bg-black/30" />
 

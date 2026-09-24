@@ -24,21 +24,21 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section id="solutions" className="">
+    <section id="solutions" className=" mb-20">
       {/* Decorative effect */}
       {/* <div className="absolute top-0 right-0 w-full h-full bg-black/80  inset-0" /> */}
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-display">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#101828] mb-4 font-display mt-20">
             Built for Your Industry
           </h2>
-          <p className="text-white text-md max-w-2xl mx-auto">
+          <p className="text-[#4A5565] text-md max-w-2xl mx-auto">
             Tailored solutions for different organizational needs
           </p>
         </div>
 
-        <div className="flex  gap-8">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3  gap-8">
           {industries.map((item, index) => (
             <motion.div
               key={item.title}

@@ -2,6 +2,7 @@ import {
   AlertTriangle,
   BarChart3,
   CheckCircle,
+  ChevronLeft,
   FileSearchCornerIcon,
   Icon,
   Lock,
@@ -48,7 +49,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-8 bg-white">
+    <section id="how-it-works" className="py-8 bg-white ">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4 font-display">
@@ -68,17 +69,26 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-[#F9FAFB] p-8 rounded-md flex items-center gap-5"
+              className="group bg-[#F9FAFB] p-8 rounded-md flex items-center gap-5 hover:shadow-md cursor-pointer duration-100 transition-all hover:scale-102"
             >
               <div className="bg-[#0A1F44] px-6 py-3 rounded-xl text-lg font-bold text-white">
                 {" "}
                 {step.number}
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2 font-display flex items-center gap-1">
-                  <step.icon size={20} className="text-[#A64712]" /> {step.title}
-                </h3>
-                <p className="text-slate-500 text-sm">{step.description}</p>
+              <div className="w-full flex justify-between">
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 font-display flex items-center gap-1">
+                    <step.icon size={20} className="text-[#A64712]" />{" "}
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm">{step.description}</p>
+                </div>
+                <button>
+                  <ChevronLeft
+                    size={15}
+                    className="rotate-180 flex justify-end cursor-pointer"
+                  />
+                </button>
               </div>
             </motion.div>
           ))}

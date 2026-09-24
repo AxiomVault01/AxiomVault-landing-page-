@@ -13,12 +13,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: 'Home', href: '#hero' },
     { name: 'Product', href: '#product' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'About Us', href: '#about-us' },
-    { name: 'contact', href: '#contact' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (

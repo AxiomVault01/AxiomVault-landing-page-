@@ -4,19 +4,19 @@ export default function Footer() {
   return (
     <footer className="bg-[#101828] text-slate-400 py-20 border-t border-white/5">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
-          <div className="flex flex-col items-center md:items-start gap-4">
-            <div className="">
+        <div className="flex flex-col md:flex-row justify-between gap-12 mb-16 ">
+          <div className="">
+            <div className="mb-4">
               <img
-                src="/Logo1.png"
+                src="/logo.svg"
                 loading="lazy"
                 alt="axiomvault logo"
                 className="w-70"
               />
             </div>
             <p className="text-sm max-w-xs text-center md:text-left">
-              Advanced AI-powered fraud detection for the modern financial
-              landscape.
+              AI-powered fraud detection for government and financial
+              institutions.
             </p>
           </div>
 
@@ -110,28 +110,28 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <a
               href="#"
-              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest bg-[#1E2939] p-2 rounded-md"
             >
               {" "}
               <TwitterIcon size={18} />{" "}
             </a>
             <a
               href="#"
-              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest bg-[#1E2939] p-2 rounded-md"
             >
               {" "}
               <Linkedin size={18} />{" "}
             </a>
             <a
               href="#"
-              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest bg-[#1E2939] p-2 rounded-md"
             >
               {" "}
               <Facebook size={18} />{" "}
             </a>
             <a
               href="#"
-              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest bg-[#1E2939] p-2 rounded-md"
             >
               {" "}
               <Instagram size={18} />{" "}

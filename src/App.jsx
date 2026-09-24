@@ -13,6 +13,7 @@ import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 import GoogleFormCTASection from "./components/GoogleFormCTASection";
 import Product from "./components/Product";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Testimonials />
         <Pricing />
         <CTASection />
+        <Contact />
         {/* <WaitlistForm /> */}
         {/* <GoogleFormCTASection /> */}
         <Footer />
