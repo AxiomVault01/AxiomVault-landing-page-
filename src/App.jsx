@@ -7,7 +7,7 @@ import HowItWorks from "./components/HowItWorks";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Industries from "./components/Industries";
 import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import CTASection from "./components/CTASection";
 // import WaitlistForm from "./components/WaitlistForm";
 import Footer from "./components/Footer";
@@ -27,7 +27,7 @@ function App() {
         <HowItWorks />
         <Industries />
         <Testimonials />
-        <Pricing />
+        {/* <Pricing /> */}
         <CTASection />
         <Contact />
         {/* <WaitlistForm /> */}
