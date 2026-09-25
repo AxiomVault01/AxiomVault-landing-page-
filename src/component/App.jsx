@@ -2,18 +2,16 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
-// import Capabilities from "./components/Capabilities";
+import Capabilities from "./components/Capabilities";
 import HowItWorks from "./components/HowItWorks";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Industries from "./components/Industries";
 import Testimonials from "./components/Testimonials";
-// import Pricing from "./components/Pricing";
+import Pricing from "./components/Pricing";
 import CTASection from "./components/CTASection";
-// import WaitlistForm from "./components/WaitlistForm";
+import WaitlistForm from "./components/WaitlistForm";
 import Footer from "./components/Footer";
 import GoogleFormCTASection from "./components/GoogleFormCTASection";
-import Product from "./components/Product";
-import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -22,16 +20,15 @@ function App() {
         <Navbar />
         <Hero />
         <Stats />
-        <Product />
-        <WhyChooseUs />
+        <Capabilities />
         <HowItWorks />
+        <WhyChooseUs />
         <Industries />
         <Testimonials />
-        {/* <Pricing /> */}
+        <Pricing />
         <CTASection />
-        <Contact />
         {/* <WaitlistForm /> */}
-        {/* <GoogleFormCTASection /> */}
+        <GoogleFormCTASection />
         <Footer />
       </main>
     </>

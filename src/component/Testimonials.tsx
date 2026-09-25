@@ -27,10 +27,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section
-      id="testimonials"
-      className="py-32 bg-gradient-to-tr from-[#F9FAFB] via-[#EFF6FF] to-[#F3F4F6] "
-    >
+    <section id="testimonials" className="py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-display">
@@ -41,7 +38,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
             <motion.div
               key={item.author}
@@ -52,14 +49,11 @@ export default function Testimonials() {
               className="p-10 rounded-[3rem] border border-slate-200 bg-white hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300"
             >
               <div className="flex gap-1 mb-6 text-yellow-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-current" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
               </div>
-              <blockquote className="text-slate-800 text-lg mb-8 leading-relaxed font-medium italic ">
+              <blockquote className="text-slate-800 text-lg mb-8 leading-relaxed font-medium italic">
                 "{item.quote}"
               </blockquote>
-              <hr className="mb-5 text-gray-200" />
               <div className="flex items-center gap-4">
                 {/* <img 
                   src={item.image} 
@@ -69,9 +63,7 @@ export default function Testimonials() {
                 <div>
                   <div className="font-bold text-slate-900">{item.author}</div>
                   <div className="text-sm text-slate-500">{item.role}</div>
-                  <div className="text-sm font-semibold text-brand-red">
-                    {item.company}
-                  </div>
+                  <div className="text-sm font-semibold text-brand-red">{item.company}</div>
                 </div>
               </div>
             </motion.div>

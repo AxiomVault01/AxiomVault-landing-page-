@@ -12,19 +12,15 @@ export default function CTASection() {
           className="max-w-3xl mx-auto"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 font-display">
-            Ready to Protect Your Organization?
+            Start Detecting Fraud Before It Happens
           </h2>
           <p className="text-slate-400 text-lg mb-10">
-            Join 250+ enterprises using AxiomVault to detect and prevent payroll
-            fraud
+            Join 250+ enterprises using AxiomVault to detect and prevent payroll fraud
           </p>
-          <a
-            href="#waitlist"
-            className="bg-white text-brand-dark font-bold px-8 py-4 rounded-xl flex items-center gap-2 mx-auto hover:bg-slate-100 transition-all group shadow-2xl  shadow-white/10 justify-center w-xs"
-          >
+          <button className="bg-white text-[#0a1128] font-bold px-8 py-4 rounded-xl flex items-center gap-2 mx-auto hover:bg-slate-100 transition-all group shadow-2xl shadow-white/10">
             Get Started Now
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>
