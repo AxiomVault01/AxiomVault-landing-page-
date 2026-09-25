@@ -26,7 +26,7 @@ function App() {
         <WhyChooseUs />
         <Industries />
         <Testimonials />
-        <Pricing />
+        {/* <Pricing /> */}
         <CTASection />
         {/* <WaitlistForm /> */}
         <GoogleFormCTASection />
