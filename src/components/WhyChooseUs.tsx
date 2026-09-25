@@ -1,30 +1,40 @@
+import { ArrowBigDown, LineChart, Lock, Target } from 'lucide-react';
 import { motion } from 'motion/react';
+import { BsLightning, BsThunderbolt, BsThunderboltFill } from 'react-icons/bs';
 
 const values = [
   {
-    label: 'Time Saved',
-    value: '75%',
-    tag: 'Save Time',
-    description: 'Reduce manual audit time by 75% with automated fraud detection and risk scoring.'
+    id: 1,
+    icon: BsLightning,
+    value: "75%",
+    tag: "Time Saved",
+    description:
+      "Reduce manual audit time by 75% with automated fraud detection and risk scoring.",
   },
   {
-    label: 'Detection Rate',
-    value: '98%',
-    tag: 'Increase Accuracy',
-    description: 'AI-powered analysis detects patterns humans might miss, improving fraud detection rates.'
+    id: 2,
+    icon: Target,
+    value: "98%",
+    tag: "Detection Rate",
+    description:
+      "AI-powered analysis detects patterns humans might miss, improving fraud detection rates.",
   },
   {
-    label: 'SSL Encryption',
-    value: '256-bit',
-    tag: 'Ensure Security',
-    description: 'Bank-grade encryption and compliance with government security standards.'
+    id: 3,
+    icon: Lock,
+    value: "256-bit",
+    tag: "SSL Encryption",
+    description:
+      "Bank-grade encryption and compliance with government security standards.",
   },
   {
-    label: 'Avg. Recovered',
-    value: '$2.5M',
-    tag: 'Boost ROI',
-    description: 'Recover more fraudulent funds and prevent future losses with proactive monitoring.'
-  }
+    id: 4,
+    icon: LineChart,
+    value: "$2.5M",
+    tag: "Boost ROI",
+    description:
+      "Recover more fraudulent funds and prevent future losses with proactive monitoring.",
+  },
 ];
 
 export default function WhyChooseUs() {
@@ -36,27 +46,28 @@ export default function WhyChooseUs() {
             Why Organizations Choose AxiomVault
           </h2>
           <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-            Proven results that protect your organization and improve audit efficiency
+            Proven results that protect your organization and improve audit
+            efficiency
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {values.map((item, index) => (
             <motion.div
-              key={item.label}
+              key={item.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm flex flex-col items-start gap-4"
+              className="bg-white p-8 rounded-[1rem] border border-slate-200 shadow-sm flex flex-col items-start gap-4 "
             >
-              <div className="text-3xl font-bold text-slate-900 font-display">
+              <div className="w-10 h-10  rounded-lg flex items-center justify-center  bg-[#0A1F44] text-white">
+                <item.icon size={18} />
+              </div>
+              <div className="text-3xl font-bold uppercase tracking-widest text-[#0A1F44]">
                 {item.value}
               </div>
-              <div className="text-xs font-normal uppercase tracking-widest text-slate-400">
-                {item.label}
-              </div>
-              <div className="mt-4 py-1.5  rounded-full text-sm font-bold text-slate-900">
+              <div className=" rounded-full text-xs font-bold text-slate-400">
                 {item.tag}
               </div>
               <p className="text-slate-500 text-sm leading-relaxed">

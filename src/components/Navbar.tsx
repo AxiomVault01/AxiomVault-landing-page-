@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,10 +13,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Product', href: '#features' },
-    { name: 'Solutions', href: '#solutions' },
+    { name: 'Home', href: '#hero' },
+    { name: 'Product', href: '#product' },
+    { name: 'How It Works', href: '#how-it-works' },
     { name: 'Testimonials', href: '#testimonials' },
-    // { name: 'Pricing', href: '#pricing' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'About Us', href: '#about-us' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -52,7 +55,7 @@ export default function Navbar() {
             Sign Up
           </a>
           <a href="#waitlist" className="bg-[#102a43] hover:bg-blue-900 text-white text-sm cursor-pointer font-semibold px-5 py-2.5 rounded-xl transition-all border border-white/5 text-center">
-            Join the Waitlist
+            Get Started
           </a>
         </div>
 
