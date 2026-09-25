@@ -16,7 +16,7 @@ export default function Navbar() {
     { name: 'Product', href: '#features' },
     { name: 'Solutions', href: '#solutions' },
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Pricing', href: '#pricing' },
+    // { name: 'Pricing', href: '#pricing' },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop CTAs */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <a href="#waitlist" className="text-sm font-medium text-brand cursor-pointer ">
             Sign Up
           </a>
@@ -58,7 +58,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-brand"
+          className="lg:hidden text-brand"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -72,7 +72,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 mt-4 bg-[#ffffff] border border-white/10 rounded-2xl p-6 md:hidden shadow-2xl"
+            className="absolute top-full left-0 right-0 mt-4 bg-[#ffffff] border border-white/10 rounded-2xl p-6 lg:hidden shadow-2xl"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (
