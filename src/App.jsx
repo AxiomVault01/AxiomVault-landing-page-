@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
+
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Capabilities from "./components/Capabilities";
@@ -12,6 +12,7 @@ import CTASection from "./components/CTASection";
 import WaitlistForm from "./components/WaitlistForm";
 import Footer from "./components/Footer";
 import GoogleFormCTASection from "./components/GoogleFormCTASection";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
