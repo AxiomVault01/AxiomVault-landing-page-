@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 const values = [
   {
     label: 'Time Saved',
-    value: '75%',
+    value: '98%',
     tag: 'Save Time',
     description: 'Reduce manual audit time by 75% with automated fraud detection and risk scoring.'
   },

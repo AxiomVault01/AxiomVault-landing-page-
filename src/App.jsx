@@ -7,12 +7,13 @@ import HowItWorks from "./components/HowItWorks";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Industries from "./components/Industries";
 import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import CTASection from "./components/CTASection";
-import WaitlistForm from "./components/WaitlistForm";
+// import WaitlistForm from "./components/WaitlistForm";
 import Footer from "./components/Footer";
 import GoogleFormCTASection from "./components/GoogleFormCTASection";
 import Navbar from "./components/Navbar";
+import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         {/* <WaitlistForm /> */}
         <GoogleFormCTASection />
         <Footer />
+        <BackToTopButton />
       </main>
     </>
   );

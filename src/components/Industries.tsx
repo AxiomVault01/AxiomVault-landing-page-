@@ -48,7 +48,7 @@ export default function Industries() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:bg-white/5 transition-colors  hover:text-white "
+              className="bg-white backdrop-blur-sm p-8 rounded-3xl border border-white/10  "
             >
               <div className="w-10 h-10 bg-brand rounded-full flex items-center justify-center text-white mb-6">
                 <item.icon size={18} />

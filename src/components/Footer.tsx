@@ -6,45 +6,124 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
           <div className="flex flex-col items-center md:items-start gap-4">
-             <div className="">
-              <img src="/logo.svg" loading='lazy' alt="axiomvault logo" className='w-70'/>
+            <div className="">
+              <img
+                src="/logo.svg"
+                loading="lazy"
+                alt="axiomvault logo"
+                className="w-70"
+              />
             </div>
             <p className="text-sm max-w-xs text-center md:text-left">
-              Advanced AI-powered fraud detection for the modern financial landscape.
+              Advanced AI-powered fraud detection for the modern financial
+              landscape.
             </p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24">
             <div className="flex flex-col gap-4">
-              <h4 className="text-white font-bold text-sm uppercase tracking-widest">Company</h4>
-              <a href="#" className="hover:text-white transition-colors text-sm">About Us</a>
-              <a href="#" className="hover:text-white transition-colors text-sm">Careers</a>
-              <a href="#" className="hover:text-white transition-colors text-sm">Contact</a>
+              <h4 className="text-white font-bold text-sm uppercase tracking-widest">
+                Company
+              </h4>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Careers
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Contact
+              </a>
             </div>
             <div className="flex flex-col gap-4">
-              <h4 className="text-white font-bold text-sm uppercase tracking-widest">Legal</h4>
-              <a href="#" className="hover:text-white transition-colors text-sm">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors text-sm">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors text-sm">Cookie Policy</a>
+              <h4 className="text-white font-bold text-sm uppercase tracking-widest">
+                Legal
+              </h4>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Cookie Policy
+              </a>
             </div>
             <div className="hidden lg:flex flex-col gap-4">
-               <h4 className="text-white font-bold text-sm uppercase tracking-widest">Product</h4>
-              <a href="#" className="hover:text-white transition-colors text-sm">Features</a>
-              <a href="#" className="hover:text-white transition-colors text-sm">Solutions</a>
-              <a href="#" className="hover:text-white transition-colors text-sm">Pricing</a>
+              <h4 className="text-white font-bold text-sm uppercase tracking-widest">
+                Product
+              </h4>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Features
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Solutions
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors text-sm"
+              >
+                Pricing
+              </a>
             </div>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs">
-            © 2026 AxiomVault. All rights reserved.
-          </p>
+          <p className="text-xs">© 2026 AxiomVault. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"> <TwitterIcon size={18}/> </a>
-            <a href="#" className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"> <Linkedin size={18}/> </a>
-            <a href="#" className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"> <Facebook size={18}/> </a>
-            <a href="#" className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"> <Instagram size={18}/> </a>
+            <a
+              href="https://x.com/AxiomVault1"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+            >
+              {" "}
+              <TwitterIcon size={18} />{" "}
+            </a>
+            <a
+              href="https://www.linkedin.com/company/axiom-vault"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+            >
+              {" "}
+              <Linkedin size={18} />{" "}
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61587293300049&mibextid=rS40aB7S9Ucbxw6v"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+            >
+              {" "}
+              <Facebook size={18} />{" "}
+            </a>
+            <a
+              href="https://www.instagram.com/axiom_vault?stkn=ZHloc2JwYzRlYjNz"
+              className="hover:text-white transition-colors uppercase text-[10px] font-bold tracking-widest"
+            >
+              {" "}
+              <Instagram size={18} />{" "}
+            </a>
           </div>
         </div>
       </div>
